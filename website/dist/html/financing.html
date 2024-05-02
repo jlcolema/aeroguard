@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Aeroguard | Elite Flight Training</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/aero.css" />
+    <script>document.createElement("picture");</script>
+    <script src="js/picturefill.min.js" async></script>
+    <script src="http://use.typekit.net/uqr3qsc.js"></script>
+    <script>try { Typekit.load({ async: true }); } catch (e) { }</script>
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-102926610-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <style>
+      @media (max-width: 992px){
+        .aero-block-img_img {margin:0 auto;max-width:30%}
+        .aero-block-img-layer {text-align:center}
+      }
+    </style>
+
+    <!-- Temporary Font -->
+
+    <script type="text/javascript">
+        (function() {
+            var trial = document.createElement('script');
+            trial.type = 'text/javascript';
+            trial.async = true;
+            trial.src = 'https://easy.myfonts.net/v2/js?sid=223324(font-family=Coolvetica+Book)&sid=223385(font-family=Coolvetica+Regular)&sid=223443(font-family=Coolvetica+UltraLight)&sid=223491(font-family=Coolvetica+Bold)&key=K5Akxr5E4P';
+            var head = document.getElementsByTagName("head")[0];
+            head.appendChild(trial);
+        })();
+    </script>
+
+    <!-- Temporary Styles -->
+
+    <style type="text/css">
+
+        /* Preview Bar */
+
+        #mfPreviewBar {
+
+            display: none !important;
+
+        }
+
+        .nav-call {
+
+            font-family: 'Coolvetica Book', coolvetica, sans-serif;
+
+        }
+
+        #aero-main h2 {
+
+            font-family: 'Coolvetica Regular', coolvetica, sans-serif;
+
+        }
+
+        .aero-copy h3 {
+
+            font-family: 'Coolvetica Regular', coolvetica, sans-serif;
+
+        }
+
+        .aero-form-body h2 {
+
+            font-family: 'Coolvetica Regular', coolvetica, sans-serif;
+
+        }
+
+    </style>
+
+    <!-- Custom Styles -->
+
+    <style type="text/css">
+
+        /* Arrow */
+
+        #aero-main {
+
+            position: relative;
+
+        }
+
+            #aero-main .move {
+
+                display: none;
+                position: absolute;
+                right: 0;
+                bottom: 20px;
+                left: 0;
+                width: 100%;
+                z-index: 1;
+
+            }
+
+            @media screen and (min-width: 992px) {
+
+                #aero-main .move {
+
+                    display: block;
+
+                }
+
+            }
+
+                #aero-main .move .mx-auto {
+
+                    width: 104px;
+                    margin: 0 auto;
+
+                }
+
+                    #aero-main .move img {}
+
+        /* Instructors */
+
+        #aero-instructors {}
+
+        @media screen and (min-width: 1024px) {
+
+            #aero-instructors {
+
+                padding-top: 0;
+
+            }
+
+        }
+
+            #aero-instructors .aero-img-container {
+
+                display: none;
+
+            }
+
+            @media screen and (min-width: 992px) {
+
+                #aero-instructors .aero-img-container {
+
+                    display: block;
+
+                }
+
+            }
+
+            #aero-instructors .aero-copy {
+
+                padding-top: 20px;
+
+            }
+
+            @media screen and (min-width: 1024px) {
+
+                #aero-instructors .aero-copy {
+
+                    padding-top: 95px;
+
+                }
+
+            }
+
+    </style>
+
+</head>
+<body id="instructors">
+    <a href="javascript:" id="return-to-top"><i class="icon-chevron-up"></i></a>
+    <div class="stick-req-wrapper"><a href="#aero-form-container" class="stick-req">[+] Request Info</a></div>
+    <header class="aero-header" id="aero-header">
+        <nav id="mainNav" class="navbar navbar-inverse" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+
+                    <!-- Logo -->
+
+                    <a class="navbar-brand page-scroll" href="index.html">
+
+                        <!-- <img src="img/aeroguard_logo_2x.png" alt="Aeroguard | Elite Flight Training" class="visible-sm visible-md visible-lg" /> -->
+
+                        <!-- <img src="img/aeroguard_logo.png" alt="Aeroguard | Elite Flight Training" class="visible-xs" /> -->
+
+                        <img src="img/aeroguard_white_logo.png" alt="Aeroguard | Elite Flight Training" />
+
+                    </a>
+
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <div class="nav-connections">
+                        <div class="nav-call text-w">QUESTIONS? CALL <a href="tel:18003221526">1-800-322-1526</a></div>
+                        <ul class="social-icons">
+                            <li><a href="#aero-form-container" class="homeNavReq">Request More Info</a></li>
+                            <li><a href="http://www.facebook.com/" class="social-icon"> <i class="fa fa-facebook-square"></i></a></li>
+                            <li><a href="https://www.youtube.com/" class="social-icon"> <i class="fa fa-youtube"></i></a></li>
+                            <li><a href="https://twitter.com/" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="slidemenu" class="navbar-collapse collapse">
+                    <div class="close visible-xs">X</div>
+                    <ul class="nav top-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="difference.html">The AeroGuard Difference</a></li>
+                        <li><a href="curriculum.html">Curriculum</a></li>
+                        <li><a href="financing.html">Financing</a></li>
+                        <li><a href="instructors.html">Flight Instructors</a></li>
+                        <li><a href="fleet.html">Fleet</a></li>
+                        <li><a href="skywest.html">SkyWest</a></li>
+                        <!-- <li><a href="financial-aid.html">Financial Aid</a></li> -->
+                        <li><a href="employment.html">Employment</a></li>
+                        <li><a href="location.html">Location</a></li>
+                        <li><a href="about-us.html">About Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="navbar-height-col"></div>
+        </nav>
+    </header>
+    <section id="aero-main" class="aero-main aero-jumbotron_wrapper">
+        <div class="aero-jumbotron-layer aero-jumbotron_bg">
+            <picture class="aero-jumbotron aero-jumbotron-main aero-jumbotron_bg">
+                <source srcset="/img/financing_bg_plane-lg.jpg, /img/financing_bg_plane-lg.jpg 2x" media="(min-width: 1280px)" />
+                <source srcset="/img/financing_bg_plane-md.jpg, /img/financing_bg_plane-md.jpg 2x" media="(min-width: 1024px)" />
+                <source srcset="/img/financing_bg_plane-sm.jpg, /img/financing_bg_plane-sm.jpg 2x" media="(min-width: 768px)" />
+                <source srcset="/img/financing_bg_plane-xs.jpg, /img/financing_bg_plane-xs.jpg 2x" media="screen" />
+                <img alt="" title="" class="aero-jumbotron_img" src="/img/financing_bg_plane-xs.jpg" />
+            </picture>
+        </div>
+        <div class="aero-jumbotron-layer aero-copy-container">
+            <div class="aero-copy">
+                <div class="col-sm-8 col-sm-offset-1 col-md-12 mx-auto">
+                    <figure class="logo visible-sm visible-md visible-lg">
+        	            <h1>Options for</h1>
+                        <h2>FINANCING YOUR<br> EDUCATION</h2>
+                    </figure>
+
+                </div>
+            </div>
+        </div>
+        <div class="move">
+          <div class="mx-auto">
+            <img src="img/arrow.png" class="block col-6 sm-col-10 mx-auto" style="">
+          </div>
+        </div>
+    </section>
+    <section id="aero-instructors" class="aero-instructors aero-block-img_wrapper">
+        <div class="aero-block-img-layer aero-img-container col-xs-12 col-md-5">
+            <picture class="aero-block-img">
+                <source srcset="/img/financing_pilot-md.jpg, /img/financing_pilot-md.jpg 2x" media="(min-width: 1024px)" />
+                <source srcset="/img/financing_pilot-sm.jpg, /img/financing_pilot-sm.jpg 2x" media="screen" />
+                <img alt="Become elite with Aeroguard" title="" class="aero-block-img_img" src="/img/financing_pilot-sm.jpg" />
+            </picture>
+        </div>
+        <div class="aero-block-img-layer aero-copy-container col-xs-12 col-md-7">
+            <div class="aero-copy align-left">
+                <div>
+        	        <h2>An Investment in</h2>
+                    <h3 style="color: black;">YOUR FUTURE</h3>
+                    <p>If you need financial aid to cover the cost of your training, AeroGuard is here to help. In fact, keeping costs and repayment manageable is always a major focus for us.</p>
+                    <p><b>You can apply for a loan to finance nearly 90% of your AeroGuard tuition.</b> As an additional benefit, you can also apply for a loan amount to cover your housing during the training portion (approximately the first 8 months) of the AeroGuard program.</p>
+                    <p>And absolutely <b>no loan repayments are required during the training portion</b> of the program.</p>
+                    <p>Plus, after you complete both the AeroGuard program and SkyWest’s initial training process, <b>SkyWest will provide $17,500</b> toward repayment of your loan.</p>
+                    <p>Contact Josh Adamowich at <a href="mailto:JAdamowich@flyaeroguard.com">JAdamowich@flyaeroguard.com</a> for details about this terrific financing program.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Get More Information Now -->
+
+    <section id="aero-form" class="aero-form aero-jumbotron_wrapper">
+
+        <div class="aero-jumbotron-layer aero-jumbotron_bg">
+
+            <picture class="aero-jumbotron aero-jumbotron_bg">
+
+                <source srcset="img/financing_bg_blur-lg.jpg, img/financing_bg_blur-lg.jpg 2x" media="(min-width: 1280px)" />
+                <source srcset="img/financing_bg_blur-md.jpg, img/financing_bg_blur-md.jpg 2x" media="(min-width: 1024px)" />
+                <source srcset="img/financing_bg_blur-sm.jpg, img/financing_bg_blur-sm.jpg 2x" media="(min-width: 768px)" />
+                <source srcset="img/financing_bg_blur-xs.jpg, img/financing_bg_blur-xs.jpg 2x" media="screen" />
+
+                <img alt="" title="" class="aero-jumbotron_img" src="img/financing_bg_blur-xs.jpg" />
+
+            </picture>
+
+        </div>
+
+        <div id="aero-form-container" class="aero-jumbotron-layer aero-copy-container aero-form-wrapper">
+
+            <div class="aero-copy aero-form-body">
+
+                <div class="col-md-10 col-md-offset-1">
+
+                    <div class="loading">
+
+                        <img src="img/loading.gif" alt="Loading" />
+
+                    </div>
+
+                    <h2>GET MORE INFORMATION NOW</h2>
+
+                    <p>Selecting the right pilot program is a big decision. Let us show you everything AeroGuard has to offer and answer all your questions.  Simply fill out the short form below.</p>
+
+                    <ul>
+
+                        <li class="txt">
+
+                            <input type="text" name="fname" id="fname" placeholder="First Name" class="form-control input-lg lead-form" />
+
+                        </li>
+
+                        <li class="txt">
+
+                            <input type="text" name="lname" id="lname" placeholder="Last Name" class="form-control input-lg lead-form" />
+
+                        </li>
+
+                        <li class="txt">
+
+                            <input type="email" name="email" id="email" placeholder="Email Address" class="form-control input-lg lead-form" />
+
+                        </li>
+
+                        <li class="txt">
+
+                            <input type="tel" name="phone" id="phone" data-format="ddd-ddd-dddd" maxlength="12" placeholder="Phone Number" class="form-control input-lg lead-form bfh-phone" />
+
+                        </li>
+
+                        <li class="privacy">AeroGuard will not share or sell your personal information. All contact details you provide will be kept private.</li>
+
+                        <li class="submit">
+
+                            <button type="button" id="frmSubmit" class="submit">Submit Request</button>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-xs-12">
+
+                    <div class="footer-copyright">Copyright &copy; 2018 AeroGuard Flight Training Center. <span>All rights reserved.</span></div>
+
+                    <div class="footer-contact">
+
+                        <span>Call: <a href="tel:18003221526">1-800-322-1526</a></span> <span class="seperator">|</span> <span>Email: <a href="mailto:AeroGuard@FlyAeroGuard.com">AeroGuard@FlyAeroGuard.com</a></span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- End Footer -->
+
+    <!-- Privacy Modal -->
+    <div class="modal fade" id="tyModal" tabindex="-1" role="dialog" aria-labelledby="disclosuresModalTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h5 class="modal-title" id="disclosuresModalTitle">Thanks for your request</h5>
+                </div>
+                <div class="modal-body">
+                    <p>An Aeroguard representative will be in touch soon.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Return to Site</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- Bootstrap Form Helper (Phone) -->
+    <script src="js/bootstrap-formhelpers-phone.js"></script>
+    <script src="js/aero.js" type="text/javascript"></script>
+
+</body>
+</html>
+

@@ -1,0 +1,3062 @@
+/* Font Awesom */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css");
+
+/* Normalize */
+body {
+	overflow-x:hidden
+}
+.h1, .h2, .h3, h1, h2, h3 {
+	margin-bottom: 0px;
+}
+
+/* Links */
+a.bigOrangeBtn {
+	color:#424242;
+	margin:0 auto;
+	border:2px solid #ff9900;
+	display:block;
+	font-size:15px;
+	font-weight:600;
+	line-height:1.8;
+	text-align:center;
+	text-transform:uppercase;
+	max-width:250px;
+	width:80%;
+}
+a.bigOrangeBtn:hover,
+a.bigOrangeBtn:active,
+a.bigOrangeBtn:focus {
+	text-decoration:none;
+}
+.text-b {
+	color:#000 !important;
+}
+.text-w {
+	color:#fff !important;
+}
+@media (min-width:768px) {
+	a.bigOrangeBtn { margin:0; border-width:3px; }
+	.aero-block-img_wrapper a.bigOrangeBtn { margin:0 auto; }
+}
+@media (min-width:992px) {
+	a.bigOrangeBtn { border-width:4px; font-size:20px; line-height:52px; max-width:410px }
+	.aero-block-img_wrapper a.bigOrangeBtn { margin:0; border-width:2px; font-size:16px; line-height:40px; max-width:325px }
+}
+@media (min-width:1200px) {
+	.aero-block-img_wrapper a.bigOrangeBtn { border-width:3px; font-size:18px; line-height:45px; max-width:375px }
+}
+@media (min-width:1600px) {
+	.aero-block-img_wrapper a.bigOrangeBtn { border-width:4px; font-size:20px; line-height:52px; max-width:410px }
+}
+
+/* Sticky Request Info */
+.stick-req-wrapper {
+	position:fixed;
+	bottom:0;
+	height:40px;
+	width:100%;
+	text-align:center;
+	z-index:100;
+}
+.stick-req {
+	background-color:#3299ba;
+	color:#fff;
+	padding:10px 0;
+	display:block;
+	text-transform:uppercase;
+}
+.stick-req:hover,
+.stick-req:active,
+.stick-req:visited {
+	color:#fff;
+	text-decoration:none;
+}
+
+@media (min-width: 768px) {
+	.stick-req-wrapper {
+		right:0;
+		top:20%;
+		-webkit-transform-origin: 100% 100%;
+		-moz-transform-origin: 100% 100%;
+		-ms-transform-origin: 100% 100%;
+		-o-transform-origin: 100% 100%;
+		transform-origin: 100% 100%;
+		-webkit-transform: rotate(270deg);
+		-moz-transform: rotate(270deg);
+		-ms-transform: rotate(270deg);
+		-o-transform: rotate(270deg);
+		transform: rotate(270deg);
+		height:30px;
+		width:170px;
+	}
+	.stick-req {
+		padding:5px 0;
+	}
+
+}
+
+/* Header */
+#mainNav {
+	position:absolute;
+	right:0;
+	left:0;
+	z-index:20
+}
+#mainNav .container {
+	padding: 0!important;
+	position:relative
+}
+.nav {
+	background-color:rgba(0, 0, 0, 0.75);
+	float:right;
+	width:210px
+}
+.nav > li > a {
+	color:#fff;
+	text-align:right
+}
+.nav > li:hover {
+	background-color:#f90;
+}
+/* Always show hamburger menu */
+.navbar-inverse {
+	background-color: transparent;
+	border: 0 none
+}
+/*
+.navbar-header {
+	margin:10px auto 0;
+	float: none;
+	max-width:1200px
+}
+*/
+.container>.navbar-header {
+	margin-right:0;
+	margin-left:0;
+}
+.navbar-header {
+	margin:15px auto 0;
+	padding:0 15px;
+	position:absolute;
+	width:100%
+}
+#mainNav #navbar-height-col {
+	background-color:#333;
+	position: fixed;
+	top: 0;
+	height: 100%;
+	width: 40%;
+	left: -60%;
+}
+.navbar-brand {
+	padding:0 0 0 15px;
+	height:35px;
+}
+.navbar-brand img {
+	height:100%;
+	width:auto;
+}
+.navbar-toggle {
+	margin-top:14px;
+	display: block
+}
+.navbar-collapse.collapse {
+  display: none!important;
+}
+.navbar-nav {
+  float: none!important;
+}
+.navbar-nav>li {
+  float: none;
+}
+.navbar-collapse.collapse.in{
+  display:block !important;
+}
+.nav>li>a:focus, .nav>li>a:hover {
+	background-color: transparent
+}
+
+/* Slide menu */
+#mainNav #slidemenu {
+	right: -100%;
+	width: 40%;
+	min-width: 0;
+	position: absolute;
+	padding-left: 0;
+	z-index: 2;
+	top: -8px;
+	margin: 0;
+}
+#mainNav #slidemenu .top-nav {
+	background-color:transparent;
+	min-width: 0;
+	width: 100%;
+	margin: 30px 0 0;
+	text-align:right
+}
+#mainNav #slidemenu .top-nav li a {
+	color:#fff;
+	line-height:15px;
+}
+.top-nav li a { color:#333; font-size:12px; line-height:30px; text-shadow:0px 0px 0px }
+#mainNav #slidemenu .top-nav .dropdown-menu li a {
+	min-width: 0;
+	width: 80%;
+	white-space: normal;
+}
+#mainNav #slidemenu .close {
+	color:#fff;
+	right: 9px;
+	position: absolute;
+	top: 12px;
+	font-size:15px;
+	font-weight:100;
+}
+
+@media (max-width:480px) {
+	#mainNav #navbar-height-col { width: 60%; }
+	#mainNav #slidemenu { width: 60%; }
+}
+
+@media (min-width:768px) {
+	#mainNav .container {
+		padding-right: 15px;
+		padding-left: 15px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	.navbar-header {
+		margin:10px auto 0;
+		float: none;
+		max-width:1200px;
+		position:relative
+	}
+	#mainNav #slidemenu .top-nav {
+
+		float: left;
+		/*width: 190px;*/
+		width: 200px;
+
+	}
+
+	#mainNav #slidemenu { background-color:rgba(0, 0, 0, 0.75); left:auto !important; right:0; top:82px; width:200px; }
+	#mainNav #slidemenu .top-nav { margin-top:0; }
+	#mainNav #navbar-height-col { display:none }
+
+	.nav > li > a {
+
+		padding: 10px 30px 10px 15px;
+
+	}
+
+}
+@media (min-width:992px) {
+	#mainNav #slidemenu { left:auto !important; right:0; top:116px }
+}
+@media (min-width:1200px) {
+	#mainNav #slidemenu { left:auto !important; right:0; top:150px }
+}
+
+/* Style hamburger menu */
+.navbar-inverse .navbar-toggle {
+	padding:0;
+	border: 0 none
+}
+.navbar-inverse .navbar-toggle:focus,
+.navbar-inverse .navbar-toggle:hover {
+	background-color: transparent
+}
+.navbar-inverse .navbar-toggle:focus .icon-bar,
+.navbar-inverse .navbar-toggle:hover .icon-bar {
+	background-color: #ff9900
+}
+.navbar-toggle .icon-bar {
+	display: block;
+	width: 30px;
+	height: 4px;
+	border-radius: 5px;
+}
+.navbar-toggle .icon-bar+.icon-bar {
+	margin-top: 4px
+}
+
+/* Nav Connections */
+.nav-connections {
+	display: inline-block;
+	float: right;
+	position:relative;
+	right:0;
+}
+.nav-call {
+	color:#333;
+	font-family: coolvetica, sans-serif;
+	float:left;
+	display:none;
+}
+.nav-call a,
+.nav-call a:active,
+.nav-call a:hover,
+.nav-call a:visited {
+	color:#333
+}
+.nav-call.text-w a,
+.nav-call.text-w a:active,
+.nav-call.text-w a:hover,
+.nav-call.text-w a:visited {
+	color:#fff
+}
+.homeNavReq {
+	background-color:#f90;
+	color: #fff;
+	margin:3px 0 0;
+	padding:0;
+	display:none;
+	font-size:11px;
+	font-weight:600;
+	line-height:2;
+	text-align:center;
+	text-transform:uppercase;
+	width:160px
+}
+.social-icons .homeNavReq:hover,
+.social-icons .homeNavReq:focus {
+	color: #fff;
+	text-decoration:none
+}
+.social-icon {
+	color: #fff;
+	display:none;
+	font-size:30px;
+}
+ul.social-icons {
+	margin: 10px 0 0;
+	padding:0;
+	height:31px;
+	float:left;
+}
+.social-icons li {
+	vertical-align: top;
+	display: inline-block;
+	height: 31px;
+	overflow:hidden;
+}
+.social-icons a {
+	color: #fff;
+	text-decoration: none;
+}
+.social-icons a:active,
+.social-icons a:hover,
+.social-icons a:focus {
+	color: #f90;
+}
+.fa-facebook-square,
+.fa-twitter,
+.fa-youtube {
+	padding:3px 10px;
+	-o-transition:.5s;
+	-ms-transition:.5s;
+	-moz-transition:.5s;
+	-webkit-transition:.5s;
+	transition: .5s;
+}
+
+.navbar-inverse .navbar-toggle .icon-bar.black {
+	background-color: #000;
+}
+
+@media (min-width:480px) {
+	.navbar-header { margin-top: 15px; }
+	.navbar-brand { height:55px; }
+	.navbar-toggle { margin-top:21px; }
+	.navbar-toggle .icon-bar { width: 38px; height: 5px; }
+	.navbar-toggle .icon-bar+.icon-bar { margin-top: 5px }
+	ul.social-icons { margin: 15px 0 0; height:35px; }
+	.social-icons li { height: 36px; }
+	.homeNavReq { margin-right:15px; font-size:14px; width:220px }
+}
+@media (min-width:768px) {
+	.navbar-header { margin-top: 24px; }
+	.navbar-brand { height:66px; }
+	.navbar-toggle { margin-top:28px; }
+	.navbar-toggle .icon-bar { width: 40px; height: 6px; }
+	.navbar-toggle .icon-bar+.icon-bar { margin-top: 6px }
+	.nav-connections { right:35px; }
+	ul.social-icons { margin: 23px 0 0; height:35px; }
+	.social-icons li { height: 36px; }
+	.homeNavReq { margin-right:15px; font-size:15px; width:241px }
+}
+@media (min-width:992px) {
+	.navbar-brand { padding:0; height:100px; }
+	.navbar-toggle { margin-top: 62px }
+	.nav-call { margin:62px 10px 0 0;display:block;font-size:19px; }
+	ul.social-icons { margin-top: 57px; }
+	/* .social-icon { display:inline; } */
+	.social-icon { display:none; }
+	.homeNavReq { display:inline-block; }
+
+}
+@media (min-width:1200px) {
+	.navbar-brand { padding:0; height:131px; }
+	.navbar-toggle { margin-top: 93px }
+	.nav-call { margin:90px 20px 0 0;font-size:22px }
+	ul.social-icons { margin-top: 88px; }
+}
+
+/* Home */
+.aero-jumbotron_wrapper {
+	background-color:#000;
+	transform:none;
+	display:-webkit-flex;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	min-height: 74vw;
+}
+.aero-block-img_wrapper {
+	background-color:#fff;
+	padding-top:35px;
+	display:block;
+	overflow:hidden
+}
+.aero-text_wrapper {
+	background-color:#fff;
+	padding-top:35px;
+	display:block;
+	overflow:hidden
+}
+.aero-jumbotron-layer {
+	min-height: inherit;
+	overflow: hidden;
+	position: relative;
+	width: 100vw;
+}
+.aero-jumbotron {
+	margin:0 auto;
+	display:block;
+	min-height:inherit;
+	max-width:1920px;
+	position:relative;
+}
+.aero-jumbotron_main-img {
+	right: 0%;
+	position: absolute;
+	top: 50%;
+	-webkit-transform: translate(0%,-50%);
+	transform: translate(0%,-50%);
+	width: 100%;
+}
+.aero-jumbotron_img {
+	left: 50%;
+	position: absolute;
+	top: 50%;
+	-webkit-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	width: 100%;
+}
+.aero-jumbotron_bg {
+	max-width:none;
+	z-index:1
+}
+.aero-block-img-layer {
+	padding:0
+}
+.aero-block-img-layer.aero-copy-container {
+	display:block
+}
+.aero-block-img {
+}
+.aero-block-img_img {
+	width:100%
+}
+.aero-copy-container {
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	min-height:0;
+	z-index: 10;
+}
+.aero-copy {
+	margin:0 20px;
+	padding:45px 0;
+	-webkit-align-items: flex-start;
+	-ms-flex-align: start;
+	align-items: flex-start;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	min-height: inherit;
+	max-width:1190px;
+	text-align:center;
+	width: calc(100% - 40px);
+}
+#top-copy .aero-copy {
+	padding-top:0
+}
+#home .aero-copy {
+	max-width:1024px;
+}
+.aero-copy h1 {
+	color:#ff9900;
+	font-family: Georgia, Times, "Times New Roman", serif;
+	font-size: 24px;
+	font-style: italic;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 1.1;
+}
+.aero-copy h2 {
+	color:#ff9900;
+	margin-top:0;
+	/*margin-bottom: 5px;*/
+	font-family: Georgia, Times, "Times New Roman", serif;
+	font-size: 24px;
+	font-style:italic;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 1.05;
+}
+
+@media screen and (min-width: 768px) {
+
+	.aero-copy h2 {
+
+		/*margin-bottom: 0;*/
+
+	}
+
+}
+
+.aero-copy h3 {
+	color:#fff;
+	margin:4px 0 5px;
+	font-family: coolvetica, sans-serif;
+	font-size: 37px;
+	font-variant: normal;
+	font-weight: 600;
+	letter-spacing:1px;
+	line-height: 0.9;
+	text-transform:uppercase
+}
+.aero-copy p {
+	color:#fff;
+	margin:10px 0 20px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 15px;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 1.3;
+}
+.aero-copy ul {
+	color:#000;
+	margin:10px 0 20px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 15px;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 1.3;
+}
+.aero-copy li {
+	text-align:left;
+	/*background: pink;*/
+	margin: 4px 0;
+}
+
+.aero-text_wrapper .aero-copy p {
+	color:#000;
+}
+
+@media (min-width:480px) {
+	.aero-copy p,
+	.aero-copy ul {
+		font-size: 22px;
+	}
+}
+@media (min-width:768px) {
+	#top-copy .aero-copy { padding-right:20px;padding-left:20px; }
+	#aero-main.aero-jumbotron_wrapper { min-height: 66.66666666vw; }
+	.aero-jumbotron_wrapper { min-height: 41.5vw; }
+	.aero-jumbotron-layer { position:absolute; min-height:inherit; }
+	.aero-copy {
+		margin:0 auto;
+		padding:0;
+		-webkit-align-items: center;
+		-ms-flex-align: center;
+		align-items: center;
+		text-align:left;
+		width: 100%;
+	}
+	.aero-block-img-layer .aero-copy { margin:0; }
+	.aero-copy h2 { font-size: 35px; }
+	.aero-copy h3 { font-size: 40px; }
+	.aero-copy p,
+	.aero-copy ul {
+		font-size: 16px;
+	}
+	.aero-jumbotron_img {
+		left: 50%;
+		-webkit-transform: translate(-50%,-50%);
+		transform: translate(-50%,-50%);
+	}
+}
+@media (min-width:992px) {
+	.aero-copy.align-left { float:left }
+	.aero-copy.align-right { float:right }
+	.aero-copy h2 { font-size: 45px; }
+	.aero-copy h3 { font-size: 70px; }
+	.aero-copy h3 { font-size: 20px; line-height:1.1 }
+	.aero-jumbotron_wrapper { min-height: 41.5vw; }
+	.aero-block-img_wrapper,
+	.aero-text_wrapper { padding-top:90px; }
+	.aero-block-img-layer { padding:0; float:left; }
+	.aero-block-img-layer.aero-copy-container { padding:0 50px; }
+}
+@media (min-width:1200px) {
+	.aero-copy h2 { font-size: 45px; }
+	.aero-copy h3 { font-size: 70px; }
+	.aero-block-img-layer .aero-copy { max-width:675px; }
+	.aero-block-img-layer.aero-copy-container { padding:0 75px; }
+}
+@media (min-width:1600px) {
+	.aero-copy h2 { font-size: 45px; }
+	.aero-copy h3 { font-size: 70px; }
+}
+@media (min-width:1920px) {
+	.aero-jumbotron_wrapper { min-height: 800px; }
+}
+@media (min-width:2560px) {
+	.aero-copy { max-width:1065px; }
+}
+
+/* main */
+#aero-main.aero-jumbotron_wrapper {
+	min-height: 56vw
+}
+#aero-main h2 {
+	color:#fff;
+	margin-top:0;
+	font-family: coolvetica, sans-serif;
+	font-size: 24px;
+	font-style:normal;
+	font-variant: normal;
+	font-weight: 600;
+	letter-spacing:1px;
+	line-height: 1.05;
+	text-transform:uppercase
+}
+#aero-main .container {
+	position:relative;
+	top:calc(50% - 162px);
+}
+#aero-main figure {
+}
+@media (max-width:768px) {
+	#aero-main.aero-jumbotron_wrapper { min-height: 75vw }
+}
+@media (min-width:768px) {
+	#aero-main h1 { font-size: 41px; }
+	#aero-main h2 { font-size: 44px; }
+}
+@media (min-width:992px) {
+	#aero-main h1 { font-size: 75px; }
+	#aero-main h2 { font-size: 80px; }
+	#aero-main .aero-copy > div {
+		margin-top:35px;
+		padding-left:15px;
+	}
+}
+@media (min-width:1200px) {
+	#aero-main h1 { font-size: 85px; }
+	#aero-main h2 { font-size: 93px; }
+	#aero-main .aero-copy > div {
+		margin:0;
+		padding:0;
+	}
+}
+@media (min-width:1280px) {
+	#aero-main.aero-jumbotron_wrapper { min-height: 50vw; }
+}
+@media (min-width:1920px) {
+	#aero-main.aero-jumbotron_wrapper { min-height: 960px; }
+	.aero-jumbotron_wrapper { min-height: 800px; }
+}
+
+/* program */
+/* success */
+.aero-success {
+	background-color:#eaf0fb;
+}
+.aero-success h2,
+.aero-success h3,
+.aero-success p {
+	color:#424242;
+}
+#SkyWest {
+	margin:30px auto 0;
+	display:block;
+	max-width:250px;
+	width:80%
+}
+@media (min-width:768px) {
+	#SkyWest {
+		margin:30px 0 0;
+		max-width:180px;
+	}
+}
+@media (min-width:860px) {
+	#SkyWest {
+		max-width:230px;
+	}
+}
+@media (min-width:992px) {
+	#SkyWest {
+		max-width:323px;
+	}
+}
+@media (min-width:1600px) {
+	#SkyWest {
+		max-width:374px;
+	}
+}
+
+/* fleet */
+#fleet #aero-main .aero-copy {
+	display:none;
+}
+.aero-fleet h2 {
+	color:#fff;
+}
+
+/* location */
+.aero-location {
+	background-color:#fff;
+}
+.aero-location h2,
+.aero-location h3,
+.aero-location p {
+	color:#424242;
+}
+.aero-location h2 {
+	font-family: Georgia, Times, "Times New Roman", serif;
+}
+.aero-location h3 {
+	font-family: coolvetica, sans-serif;
+}
+@media (min-width:768px) {
+	#fleet #aero-main .aero-copy { display:flex; }
+}
+
+/* Difference */
+.aero-block-img_wrapper .aero-copy p a,
+.aero-block-img_wrapper .aero-copy p a:active,
+.aero-block-img_wrapper .aero-copy p a:hover,
+.aero-block-img_wrapper .aero-copy p a:visited {
+	color:#3299ba;
+	text-decoration:none
+}
+.aero-block-img_wrapper .aero-copy p {
+	color:#424242;
+	margin:10px 0 15px;
+}
+#difference #aero-main .aero-copy {
+	display:none;
+}
+#difference #aero-main h1,
+#difference #aero-main h2 {
+	color:#333;
+}
+.aero-block-img_wrapper .aero-copy h3 {
+	color:#333;
+	margin:0 0 10px;
+	line-height:0.85;
+}
+#bottom-copy .justify-center,
+#bottom-copy .justify-center div {
+	margin:0 auto;
+	text-align:center
+}
+@media (min-width:768px) {
+	#difference #aero-main .aero-copy { display:flex; }
+	.aero-block-img_wrapper .aero-copy  { padding:45px 30px; }
+	.aero-block-img_wrapper .aero-copy h2 { font-size:33px;text-align:center }
+	.aero-block-img_wrapper .aero-copy h3 { font-size:53px;text-align:center }
+	.aero-block-img_wrapper .aero-copy p { font-size:19px;font-weight:500;line-height:1.5;text-align:center }
+}
+@media (min-width:992px) {
+	.aero-block-img_wrapper .aero-copy h2 { font-size:33px;text-align:left }
+	.aero-block-img_wrapper .aero-copy h3 { font-size:53px;text-align:left }
+	.aero-block-img_wrapper .aero-copy p { font-size:14px;text-align:left }
+	.aero-pilot,
+	.aero-cessna,
+	.aero-benefits,
+	.aero-strengths { margin-bottom:90px; }
+	.aero-elite .aero-copy { padding:0 }
+	.aero-pilot .aero-copy { padding:0 }
+}
+@media (min-width:1200px) {
+	.aero-block-img_wrapper .aero-copy h2 { font-size:43px }
+	.aero-block-img_wrapper .aero-copy h3 { font-size:65px }
+	.aero-block-img_wrapper .aero-copy p { font-size:16px; }
+}
+@media (min-width:1600px) {
+	#difference #aero-main h2 { font-size:93px; }
+	.aero-block-img_wrapper .aero-copy h2 { font-size:50px }
+	.aero-block-img_wrapper .aero-copy h3 { font-size:75px }
+	.aero-block-img_wrapper .aero-copy p { font-size:19px; }
+	.aero-elite .aero-copy { padding-top:25px; }
+	.aero-pilot .aero-copy { padding-top:20px; }
+}
+@media (min-width:1920px) {
+	.aero-elite .aero-copy { padding-top:50px; }
+	.aero-pilot .aero-copy { padding-top:25px; }
+}
+@media (min-width:2560px) {
+	.aero-elite .aero-copy,
+	.aero-pilot .aero-copy { padding-top:100px; }
+}
+
+/* Skywest */
+#skywest #aero-main .aero-copy,
+#instructors #aero-main .aero-copy,
+#location #aero-main .aero-copy,
+#about #aero-main .aero-copy {
+	display:none;
+}
+@media (min-width:768px) {
+	#skywest #aero-main .aero-copy,
+	#instructors #aero-main .aero-copy,
+	#location #aero-main .aero-copy,
+	#about #aero-main .aero-copy { display:flex; }
+}
+
+
+/* Curriculum */
+#curriculum #aero-main .aero-copy {
+	display:none;
+}
+#aero-course {
+	position:relative
+}
+.aero-course-path {
+	position:absolute;
+	top:90px;
+	bottom:90px;
+	text-align:center
+}
+.aero-course-path img {
+	height:100%;
+	width:auto
+}
+#path-line {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 5s linear alternate infinite;
+}
+.path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 5s linear alternate infinite;
+}
+
+@keyframes dash {
+  from {
+	stroke-dashoffset: 1000;
+  }
+  to {
+	stroke-dashoffset: 0;
+  }
+}
+.svg-path {
+	position:absolute;
+	width:100%;
+	transform:translateX(-50%);
+	-webkit-transform:translateX(-50%);
+	top:0;
+}
+.aero-course-days .aero-block-img-layer {
+	text-align:center
+}
+.aero-course-days img {
+	margin:0 auto;
+	height:auto;
+	max-width:200px;
+	width:20%
+}
+.aero-course-days .aero-copy {
+	/* margin-left:0;
+	padding-top:0; */
+}
+@media (min-width:768px) {
+	#curriculum #aero-main .aero-copy { display:flex; }
+	.aero-course-days .aero-block-img-layer.pull-right { margin-right:8.33333333%; }
+	.aero-course-days .aero-block-img-layer img { margin:0;height:auto;max-width:500px;width:100% }
+	.aero-course-days .aero-block-img-layer .aero-copy { margin-bottom:50px;margin-left:0;padding-top:0; }
+}
+@media (min-width:992px) {
+	.aero-course-days .aero-block-img-layer.pull-right { margin-right:0; }
+}
+@media (min-width:1200px) {
+	.aero-course-days .aero-block-img-layer .aero-copy { margin-bottom:75px }
+}
+@media (min-width:1600px) {
+	.aero-course-days .aero-block-img-layer .aero-copy { margin-bottom:100px }
+}
+@media (min-width:1920px) {
+}
+@media (min-width:2560px) {
+}
+
+/* thank you */
+#thank-you .aero-jumbotron_wrapper {
+	background-color:#fff;
+}
+#thank-you .aero-jumbotron_img {
+	-webkit-transform: translate(-50%,0%);
+	transform: translate(-50%,0%);
+	top:auto;
+	bottom:0;
+	height:83%;
+	width:auto;
+}
+#thank-you .aero-copy { padding:0 0 45px }
+#thank-you a.bigOrangeBtn {
+	background-color:#ff9900;
+	color:#fff;
+	margin:20px auto;
+	width:90%;
+}
+
+@media (max-width:768px) {}
+
+@media (min-width:768px) {
+
+	#thank-you .aero-jumbotron_img {
+
+		-webkit-transform:none;
+		transform:none;
+		top:auto;
+		left:auto;
+		bottom:0;
+		right:0;
+		height:80%;
+		width:auto;
+
+	}
+
+	#thank-you .aero-copy { padding:45px 0; }
+
+	#thank-you a.bigOrangeBtn {
+
+		margin:20px 0;
+
+	}
+
+}
+
+@media (min-width:992px) {}
+@media (min-width:1200px) {
+
+	#thank-you .aero-copy .logo { padding-top:100px; }
+	#thank-you .aero-jumbotron_img { height:77% }
+
+}
+
+@media (min-width:1280px) {
+
+	#thank-you .aero-copy p { font-size:21px;}
+
+}
+
+@media (min-width:1600px) {
+
+	#thank-you .aero-copy .logo { padding-top:0; }
+	#thank-you .aero-jumbotron_img { height:80% }
+
+}
+
+@media (min-width:1920px) {}
+
+/* Form */
+.aero-form-body {
+	margin:0;
+	padding:0;
+	width:100%;
+}
+.aero-form-body > div {
+	background-color:#fff;
+	padding:50px 30px;
+}
+.aero-form-body h2 {
+	color:#ff9900;
+	font-family: coolvetica, sans-serif;
+	font-size:40px;
+	font-style:normal;
+	font-weight: 600;
+	letter-spacing:1px;
+	text-align:center;
+}
+.aero-form-body p {
+	color:#424242;
+	margin:10px 0 20px;
+	font-size:15px;
+	font-weight:500;
+	line-height:1.2;
+	text-align:center;
+}
+.aero-form-body ul {
+	padding:0;
+	list-style-type:none
+}
+.aero-form-body ul li {
+	margin-top: 0;
+	margin-bottom:10px;
+}
+.aero-form-body ul li.privacy {
+	font-size:12px;
+	text-align:center
+}
+input[type=text],
+input[type=tel],
+input[type=email] {
+	border-radius:0;
+	border:1px solid #000
+}
+input[type=text].err,
+input[type=tel].err,
+input[type=email].err {
+	background-color:#fadede;
+	border:1px solid #f00
+}
+.submit {
+	background-color:#ff9900;
+	color:#fff;
+	margin:0 auto !important;
+	padding:0;
+	border:0 none;
+	display:block;
+	font-size:20px;
+	line-height:3;
+	text-align:center;
+	text-transform:uppercase;
+	max-width:410px;
+	width:100%
+}
+.loading {
+	background-color:rgba(0,0,0,0.5);
+	display:none;
+	position:absolute;
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
+	text-align:center;
+}
+.loading img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+@media (min-width:360px) {
+	.aero-form-body h2 {
+		font-size:40px;
+	}
+	.aero-form-body p {
+		font-size:12px;
+	}
+	.aero-form-body ul li.privacy {
+		font-size:9px;
+	}
+}
+@media (min-width:480px) {
+	.aero-form-body > div {
+		padding:50px 40px
+	}
+	.aero-form-body h2 {
+		font-size:50px;
+	}
+	.aero-form-body p {
+		font-size:14px;
+	}
+	.aero-form-body ul li.privacy {
+		font-size:12px;
+	}
+}
+@media (min-width:680px) {
+	.aero-form-body > div {
+		padding:50px 60px
+	}
+	.aero-form-body {
+		margin:0 auto;
+		width:100%;
+	}
+	.aero-form-body h2 {
+		font-size:38px;
+	}
+	.aero-form-body p {
+		margin:20px 0;
+		font-size:16px;
+	}
+	.aero-form-body ul li.privacy {
+		font-size:11px;
+	}
+}
+@media (min-width:768px) {
+	.aero-form-body > div {
+		background-color:rgba(255, 255, 255, .85);
+	}
+	.aero-form-body {
+		margin:0 auto;
+	}
+}
+@media (min-width:992px) {
+	.aero-form-body > div {
+		padding:40px 100px;
+	}
+	.aero-form-body ul li.txt {
+		float:left;
+		width:50%;
+	}
+	.aero-form-body ul li.txt:nth-of-type(odd) {
+		padding-right:15px;
+	}
+	.aero-form-body ul li.txt:nth-of-type(even) {
+		padding-left:15px;
+	}
+}
+@media (min-width:1200px) {
+	.aero-form-body > div {
+		padding:50px 100px;
+	}
+}
+
+/* footer */
+footer {
+	background-color:#3299ba;
+	color:#fff;
+	padding: 25px 0 65px 0;
+	font-size:9px;
+	line-height:1.5;
+	text-align:center;
+}
+footer a,
+footer a:active,
+footer a:hover,
+footer a:visited {
+	color:#fff;
+}
+@media (min-width:360px) {
+	footer {
+		font-size:10px;
+	}
+}
+@media (min-width:480px) {
+	footer {
+		font-size:12px;
+	}
+}
+
+@media (min-width: 768px) {
+
+	footer {
+
+		padding: 25px 0;
+
+	}
+
+}
+
+@media (min-width:992px) {
+	footer {
+		padding:45px 0;
+		font-size:20px;
+	}
+}
+
+	footer .footer-copyright {}
+
+		footer .footer-copyright span {
+
+			display: block;
+
+		}
+
+		@media screen and (min-width: 992px) {
+
+			footer .footer-copyright span {
+
+				display: inline;
+
+			}
+
+		}
+
+	footer .footer-contact {}
+
+		footer .footer-contact span {
+
+			display: block;
+
+		}
+
+		@media screen and (min-width: 992px) {
+
+			footer .footer-contact span {
+
+				display: inline;
+
+			}
+
+		}
+
+		footer .footer-contact .seperator {
+
+			display: none;
+
+		}
+
+		@media screen and (min-width: 992px) {
+
+			footer .footer-contact .seperator {
+
+				display: inline;
+
+			}
+
+		}
+
+/* Privacy & Disclosures Modals */
+.modal {
+	text-align:center
+}
+.modal:before {
+	content:'';
+	display:inline-block;
+	height:100%;
+	vertical-align:middle;
+	margin-right:-4px;
+}
+.modal-header {
+	display: block;
+	padding: 15px 15px 0;
+	border-bottom: 0 none;
+}
+.modal-dialog {
+	display: inline-block;
+	text-align: left;
+	vertical-align: middle;
+}
+.modal-title {
+	float: left;
+	font-family: Georgia, Times, "Times New Roman", serif;
+	font-size:20px;
+	font-style:italic;
+	text-align:center;
+	width:100%
+}
+.modal-content {
+	border: 3px solid #f90;
+	border-radius: 0px;
+}
+.modal-body {
+	padding: 10px;
+	text-align: center;
+}
+.modal-footer {
+	border: 0 none;
+	border-radius: 0px;
+}
+.modal-footer .btn {
+	background-color:#f90;
+	color:#fff;
+	margin:0 auto;
+	border-radius:0;
+	display:block;
+	text-transform:uppercase;
+}
+.close {
+	float:right;
+	filter: alpha(opacity=100);
+	opacity: 1;
+}
+@media (min-width:768px) {
+	.modal-title { font-size:40px; }
+	.modal-footer { padding-bottom:35px; }
+}
+
+#return-to-top {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	background: rgb(0, 0, 0);
+	background: rgba(0, 0, 0, 0.7);
+	width: 50px;
+	height: 50px;
+	display: block;
+	text-decoration: none;
+	-webkit-border-radius: 35px;
+	-moz-border-radius: 35px;
+	border-radius: 35px;
+	display: none;
+	-webkit-transition: all 0.3s linear;
+	-moz-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+	/*z-index:20*/
+	z-index: 1000;
+}
+#return-to-top i {
+	color: #fff;
+	margin: 0;
+	position: relative;
+	left: 16px;
+	top: 13px;
+	font-size: 19px;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+#return-to-top:hover {
+	background: rgba(0, 0, 0, 0.9);
+}
+#return-to-top:hover i {
+	color: #fff;
+	top: 5px;
+}
+
+/*--------------------------------------
+   Custom Styles
+--------------------------------------*/
+
+/* Some additional notes about the updates... */
+
+
+/* Temporary
+--------------------------------------*/
+
+/* Preview Bar */
+
+#mfPreviewBar {
+
+	display: none !important;
+
+}
+
+.nav-call {
+
+	font-family: 'Coolvetica Book', coolvetica, sans-serif;
+
+}
+
+#aero-main h2 {
+
+	font-family: 'Coolvetica Regular', coolvetica, sans-serif;
+
+}
+
+.aero-copy h3 {
+
+	font-family: 'Coolvetica Regular', coolvetica, sans-serif;
+
+}
+
+.aero-form-body h2 {
+
+	font-family: 'Coolvetica Regular', coolvetica, sans-serif;
+
+}
+
+/* Global
+--------------------------------------*/
+
+/* Logo */
+
+/* Small 107 x 56 */
+/* Medium 128 x 67 */
+/* Large 191 x 100 */
+/* Extra Large 254 x 133 */
+
+.navbar-brand {
+
+	width: 122px; /* 15px padding added */
+	height: 56px;
+
+}
+
+@media screen and (min-width: 768px) {
+
+	.navbar-brand {
+
+		width: 143px;
+		height: 67px;
+
+	}
+
+}
+
+@media screen and (min-width: 992px) {
+
+	.navbar-brand {
+
+		width: 206px;
+		height: 100px;
+
+	}
+
+}
+
+@media screen and (min-width: 1200px) {
+
+	.navbar-brand {
+
+		width: 269px;
+		height: 133px;
+
+	}
+
+}
+
+	.navbar-brand img {}
+
+
+/* Home
+--------------------------------------*/
+
+body#home {}
+
+@media screen and (max-width: 991px) {
+
+	body#home {
+
+		padding-top: 0 !important;
+
+	}
+
+}
+
+.home-notification {
+
+	font-size: 16px;
+	font-weight: 900;
+	text-transform: uppercase;
+	text-align: center;
+	background: #ffffff;
+
+}
+
+@media screen and (min-width: 992px) {
+
+	.home-notification {
+
+		position: fixed;
+		left: 0;
+		top: 0;
+		width: 100%;
+		font-size: 21px;
+		z-index: 9999;
+
+	}
+
+}
+
+	.home-notification .wrap {
+
+		border-top: 3px solid rgb(254, 153, 0);
+		border-bottom: 3px solid rgb(254, 153, 0);
+
+	}
+
+	@media screen and (min-width: 992px) {
+
+		.home-notification .wrap {
+
+			border-top: 5px solid rgb(254, 153, 0);
+			border-bottom: 5px solid rgb(254, 153, 0);
+
+		}
+
+	}
+
+		.home-notification .inner-wrap {
+
+			width: 100%;
+			max-width: 1170px;
+			margin: 0 auto;
+
+		}
+
+			.home-notification a {
+
+				display: block;
+				margin: 0 0 0 0;
+				padding: 9px 20px 8px 20px;
+				color: rgb(51, 51, 51);
+				text-decoration: none;
+
+				-webkit-animation-name: pulse;
+				-moz-animation-name: pulse;
+				-o-animation-name: pulse;
+
+				animation-name: pulse;
+
+				-webkit-animation-duration: 1s;
+				-moz-animation-duration: 1s;
+				-o-animation-duration: 1s;
+
+				animation-duration: 1s;
+
+				-webkit-animation-timing-function: ease-in-out;
+				-moz-animation-timing-function: ease-in-out;
+				-o-animation-timing-function: ease-in-out;
+
+				animation-timing-function: ease-in-out;
+
+				-webkit-animation-delay: 3s;
+				-moz-animation-delay: 3s;
+				-o-animation-delay: 3s;
+
+				animation-delay: 3s;
+
+				-webkit-animation-direction: normal;
+				-moz-animation-direction: normal;
+				-o-animation-direction: normal;
+
+				animation-direction: normal;
+
+				-webkit-animation-iteration-count: 1;
+				-moz-animation-iteration-count: 1;
+				-o-animation-iteration-count: 1;
+
+				animation-iteration-count: 1;
+
+				-webkit-animation-fill-mode: none;
+				-moz-animation-fill-mode: none;
+				-o-animation-fill-mode: none;
+
+				animation-fill-mode: none;
+
+				-webkit-animation-play-state: running;
+				-moz-animation-play-state: running;
+				-o-animation-play-state: running;
+
+				animation-play-state: running;
+
+			}
+
+			@-webkit-keyframes pulse {
+
+				0% {
+
+					opacity: 1;
+
+				}
+
+				50% {
+
+					opacity: 0;
+
+				}
+
+				100% {
+
+					opacity: 1;
+
+				}
+
+			}
+
+			@-moz-keyframes pulse {
+
+				0% {
+
+					opacity: 1;
+
+				}
+
+				50% {
+
+					opacity: 0;
+
+				}
+
+				100% {
+
+					opacity: 1;
+
+				}
+
+			}
+
+			@-o-keyframes pulse {
+
+				0% {
+
+					opacity: 1;
+
+				}
+
+				50% {
+
+					opacity: 0;
+
+				}
+
+				100% {
+
+					opacity: 1;
+
+				}
+
+			}
+
+			@keyframes pulse {
+
+				0% {
+
+					opacity: 1;
+
+				}
+
+				50% {
+
+					opacity: 0;
+
+				}
+
+				100% {
+
+					opacity: 1;
+
+				}
+
+			}
+
+			@media screen and (min-width: 992px) {
+
+				.home-notification a {
+
+					margin: -6px 0 0 0;
+					padding: 0 20px 11px 20px;
+
+				}
+
+			}
+
+			.home-notification a:hover {}
+
+				.home-notification .blue {
+
+					color: rgb(50, 153, 186);
+
+				}
+
+				.home-notification .first {
+
+					display: block;
+
+				}
+
+				.home-notification .first:before {}
+
+				@media screen and (min-width: 992px) {
+
+					.home-notification .first:before {
+
+						content: "";
+						position: relative;
+						top: 11px;
+						display: inline-block;
+						width: 130px;
+						height: 43px;
+						background: url(../img/helicopter_icon.png);
+
+					}
+
+				}
+
+				.home-notification .second {
+
+					display: block;
+
+				}
+
+				.home-notification .for-large-screen {
+
+					display: none;
+
+				}
+
+				@media screen and (min-width: 992px) {
+
+					.home-notification .for-large-screen {
+
+						display: inline;
+
+					}
+
+				}
+
+/* The AeroGuard Difference
+--------------------------------------*/
+
+#difference {}
+
+	#difference #aero-elite {
+
+		padding-top: 0;
+
+	}
+
+	@media screen and (min-width: 992px) {
+
+		#difference #aero-elite {
+
+			padding-top: 35px;
+
+		}
+
+	}
+
+/* Curriculum
+--------------------------------------*/
+
+#curriculum {}
+
+	#curriculum #aero-course {
+
+		padding-top: 0;
+
+	}
+
+	@media screen and (min-width: 768px) {
+
+		#curriculum #aero-course {
+
+			padding-top: 35px;
+
+		}
+
+	}
+
+/* Flight Instructors
+--------------------------------------*/
+
+#instructors {}
+
+	#instructors #aero-main {}
+
+		#instructors #aero-main div.mx-auto {
+
+			display: none;
+
+		}
+
+		@media screen and (min-width: 992px) {
+
+			#instructors #aero-main div.mx-auto {
+
+				display: block;
+
+			}
+
+		}
+
+	#instructors #aero-instructors {}
+
+		#instructors #aero-instructors .aero-block-img {
+
+			display: none;
+
+		}
+
+		@media screen and (min-width: 992px) {
+
+			#instructors #aero-instructors .aero-block-img {
+
+				display: inline;
+
+			}
+
+		}
+
+/* Fleet
+--------------------------------------*/
+
+#fleet {}
+
+	#fleet #aero-archer {
+
+		padding-top: 0;
+
+	}
+
+	@media screen and (min-width: 760px) {
+
+		#fleet #aero-archer {
+
+			padding-top: 35px;
+
+		}
+
+	}
+
+/* Location
+--------------------------------------*/
+
+#location {}
+
+	#location .aero-center {}
+
+		#location .aero-center .aero-copy-container {}
+
+			#location .aero-center .aero-copy-container .aero-copy {
+
+				padding-bottom: 0;
+
+			}
+
+			@media screen and (min-width: 992px) {
+
+				#location .aero-center .aero-copy-container .aero-copy {
+
+					padding-bottom: 45px;
+
+				}
+
+			}
+
+	#location #bottom-copy {
+
+		padding-top: 0;
+
+	}
+
+	@media screen and (min-width: 992px) {
+
+		#location #bottom-copy {
+
+			padding-top: 35px;
+
+		}
+
+	}
+
+	#location #aero-form {}
+
+		#location #aero-form .aero-jumbotron-layer {}
+
+			#location #aero-form picture {}
+
+							#location #aero-form img {
+
+								position: static;
+								transform: none;
+
+							}
+
+/* About Us
+--------------------------------------*/
+
+#about {}
+
+	#about #aero-standard {}
+
+		#about #aero-standard .aero-copy-container {}
+
+			#about #aero-standard .aero-copy {
+
+				padding-top: 20px;
+
+			}
+
+			@media screen and (min-width: 992px) {
+
+				#about #aero-standard .aero-copy {
+
+					padding-top: 45px;
+
+				}
+
+			}
+
+/* SkyWest Employee
+--------------------------------------*/
+
+#skywest-employee {}
+
+	#skywest-employee #aero-main {}
+
+		#skywest-employee #aero-main .aero-copy-container {}
+
+			#skywest-employee #aero-main .aero-copy-container .aero-copy {
+
+				display: none;
+
+			}
+
+			@media screen and (min-width: 768px) {
+
+				#skywest-employee #aero-main .aero-copy-container .aero-copy {
+
+					display: flex;
+
+				}
+
+			}
+
+#skywest-employee-steps {
+
+	width: 100%;
+	max-width: 1190px;
+	margin: 0 auto;
+	padding: 0 20px;
+
+}
+
+	.skywest-employee-steps-wrap {
+
+		padding: 50px 0;
+		/*background: pink;*/
+
+	}
+
+	@media screen and (min-width: 992px) {
+
+		.skywest-employee-steps-wrap {
+
+			padding: 100px 0;
+
+		}
+
+	}
+
+		.skywest-employee-step {
+
+			margin: 0 0 65px 0;
+			/*background: purple;*/
+
+		}
+
+		@media screen and (min-width: 768px) {
+
+			.skywest-employee-step {
+
+				display: flex;
+				flex-direction: row-reverse;
+				flex-wrap: nowrap;
+				justify-content: flex-start;
+				align-items: stretch;
+				align-content: flex-start;
+
+			}
+
+		}
+
+		@media screen and (min-width: 992px) {
+
+			.skywest-employee-step {
+
+				margin: 0 0 100px 0;
+
+			}
+
+		}
+
+		.skywest-employee-step:last-of-type {
+
+			margin: 0;
+
+		}
+
+			.skywest-employee-step-icon {
+
+				text-align: center;
+
+			}
+
+			@media screen and (min-width: 768px) {
+
+				.skywest-employee-step-icon {
+
+					width: 37.304347826% /* 4 columns */;
+
+				}
+
+			}
+
+				.skywest-employee-step-icon img {
+
+					width: 20%;
+
+				}
+
+				@media screen and (min-width: 768px) {
+
+					.skywest-employee-step-icon img {
+
+						width: 100%;
+
+					}
+
+				}
+
+			.skywest-employee-step-detail {}
+
+			@media screen and (min-width: 768px) {
+
+				.skywest-employee-step-detail {
+
+					display: block;
+					width: 62.695652174%; /* 8 columns */
+					padding: 0 30px 0 0;
+
+				}
+
+			}
+
+				.skywest-employee-step-detail h2 {
+
+					font-size: 24px;
+					line-height: 1.05;
+					font-style: italic;
+					font-variant: normal;
+					font-weight: 500;
+					font-family: Georgia, Times, "Times New Roman", serif;
+					color: #ff9900;
+					text-align: center;
+
+				}
+
+				@media screen and (min-width: 768px) {
+
+					.skywest-employee-step-detail h2 {
+
+						font-size: 33px;
+
+					}
+
+				}
+
+				@media screen and (min-width: 992px) {
+
+					.skywest-employee-step-detail h2 {
+
+						text-align: left;
+
+					}
+
+				}
+
+				@media screen and (min-width: 1200px) {
+
+					.skywest-employee-step-detail h2 {
+
+						font-size: 43px;
+
+					}
+
+				}
+
+				@media screen and (min-width: 1600px) {
+
+					.skywest-employee-step-detail h2 {
+
+						font-size: 50px;
+
+					}
+
+				}
+
+				.skywest-employee-step-detail h3 {
+
+					margin: 0 0 10px 0;
+					font-family: 'Coolvetica Regular', coolvetica, sans-serif;
+					font-size: 37px;
+					font-variant: normal;
+					font-weight: 600;
+					letter-spacing: 1px;
+					line-height: 0.85;
+					text-transform: uppercase;
+					text-align: center;
+
+				}
+
+				@media screen and (min-width: 768px) {
+
+					.skywest-employee-step-detail h3 {
+
+						font-size: 53px;
+
+					}
+
+				}
+
+				@media screen and (min-width: 992px) {
+
+					.skywest-employee-step-detail h3 {
+
+						text-align: left;
+
+					}
+
+				}
+
+				@media screen and (min-width: 1200px) {
+
+					.skywest-employee-step-detail h3 {
+
+						font-size: 65px;
+
+					}
+
+				}
+
+				@media screen and (min-width: 1600px) {
+
+					.skywest-employee-step-detail h3 {
+
+						font-size: 75px;
+
+					}
+
+				}
+
+				.skywest-employee-step-detail p {
+
+					margin: 10px 0 15px 0;
+					font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+					font-size: 15px;
+					font-variant: normal;
+					font-weight: 400;
+					line-height: 1.3;
+					text-align: center;
+
+				}
+
+				@media screen and (min-width: 480px) {
+
+					.skywest-employee-step-detail p {
+
+						font-size: 22px;
+
+					}
+
+				}
+
+				@media screen and (min-width: 768px) {
+
+					.skywest-employee-step-detail p {
+
+						font-size: 19px;
+						line-height: 1.5;
+						font-weight: 500;
+
+					}
+
+				}
+
+				@media screen and (min-width: 992px) {
+
+					.skywest-employee-step-detail p {
+
+						font-size: 14px;
+						text-align: left;
+
+					}
+
+				}
+
+				@media screen and (min-width: 1200px) {
+
+					.skywest-employee-step-detail p {
+
+						font-size: 16px;
+
+					}
+
+				}
+
+				@media screen and (min-width: 1600px) {
+
+					.skywest-employee-step-detail p {
+
+						font-size: 19px;
+
+					}
+
+				}
+
+#current-skywest-employee {
+
+	width: 100%;
+	max-width: 1330px;
+	margin: 0 auto;
+	padding: 0;
+	overflow: hidden;
+
+}
+
+	.current-skywest-employee-wrap {}
+
+	@media screen and (min-width: 992px) {
+
+		.current-skywest-employee-wrap {
+
+			display: flex;
+			flex-direction: row;
+			flex-wrap: nowrap;
+			justify-content: flex-start;
+			align-items: stretch;
+			align-content: flex-start;
+
+		}
+
+	}
+
+		.current-skywest-employee-image {
+
+			display: none;
+
+		}
+
+		@media screen and (min-width: 992px) {
+
+			.current-skywest-employee-image {
+
+				display: block;
+				width: 50%;
+				align-self: flex-end;
+
+			}
+
+		}
+
+			.current-skywest-employee-image img {}
+
+		.current-skywest-employee-form {
+
+			padding: 0 0 65px 0;
+
+		}
+
+		@media screen and (min-width: 992px) {
+
+			.current-skywest-employee-form {
+
+				width: 50%;
+				padding: 65px 0;
+
+			}
+
+		}
+
+			.current-skywest-employee-form-inner-wrap {
+
+				padding: 0 20px;
+
+			}
+
+			@media screen and (min-width: 992px) {
+
+				.current-skywest-employee-form-inner-wrap {
+
+					padding: 0 18% 0 0;
+
+				}
+
+			}
+
+				.current-skywest-employee-form h2 {
+
+					margin: 0 0 16px 0;
+					font-size: 37px;
+					line-height: 1;
+					font-family: Georgia, Times, "Times New Roman", serif;
+					font-style: italic;
+					text-align: center;
+
+				}
+
+				@media screen and (min-width: 992px) {
+
+					.current-skywest-employee-form h2 {
+
+						font-size: 60px;
+						text-align: left;
+
+					}
+
+				}
+
+				.current-skywest-employee-form p {
+
+					font-size: 16px;
+					line-height: 1.3125;
+					text-align: center;
+
+				}
+
+				@media screen and (min-width: 992px) {
+
+					.current-skywest-employee-form p {
+
+						text-align: left;
+
+					}
+
+				}
+
+				.current-skywest-employee-form ul {
+
+					display: flex;
+					flex-direction: row;
+					flex-wrap: wrap;
+					justify-content: space-between;
+					align-items: flex-start;
+					align-content: flex-start;
+					margin: 20px 0 10px 0;
+					padding: 0;
+					list-style: none;
+
+				}
+
+					.current-skywest-employee-form li {
+
+						width: 100%;
+						margin: 0 0 8px 0;
+
+					}
+
+					@media screen and (min-width: 480px) {
+
+						.current-skywest-employee-form li {
+
+							width: 49%;
+							width: calc(50% - 6px);
+
+						}
+
+					}
+
+						.current-skywest-employee-form label {
+
+							font-size: 12px;
+							text-transform: uppercase;
+							color: #3299ba;
+
+						}
+
+						.current-skywest-employee-form input {
+
+							border: 1px solid #888888;
+							border-radius: 4px;
+
+						}
+
+				.current-skywest-employee-form div.submit {
+
+					max-width: none;
+
+				}
+
+					.current-skywest-employee-form button {
+
+						max-width: none;
+
+					}
+
+/* Employment
+--------------------------------------*/
+
+#employment {}
+
+	#employment .aero-employment-wrapper {
+
+		overflow: hidden;
+
+	}
+
+		#employment .aero-instructors {
+
+			overflow: visible;
+
+		}
+
+		#employment .aero-instructors:after {
+
+			content: ".";
+			display: block;
+			height: 0;
+			clear: both;
+			visibility: hidden;
+			font-size: 0;
+
+		}
+
+			#employment .aero-instructors .aero-copy-container {}
+
+				#employment .aero-instructors .aero-copy {}
+
+					#employment .aero-instructors .aero-copy div {}
+
+						#employment .aero-instructors .aero-copy h2 {}
+
+						#employment .aero-instructors .aero-copy h3 {}
+
+						#employment .aero-instructors .aero-copy p {
+
+							text-align: left;
+
+						}
+
+						#employment .aero-instructors .aero-copy .list-columns {}
+
+						#employment .aero-instructors .aero-copy .list-columns:after {}
+
+						@media screen and (min-width: 768px) {
+
+							#employment .aero-instructors .aero-copy .list-columns:after {
+
+								content: ".";
+								display: block;
+								height: 0;
+								clear: both;
+								visibility: hidden;
+								font-size: 0;
+
+							}
+
+						}
+
+							#employment .aero-instructors .aero-copy .list-columns .first-list {}
+
+							@media screen and (min-width: 768px) {
+
+								#employment .aero-instructors .aero-copy .list-columns .first-list {
+
+									float: left;
+									width: 47%;
+									width: calc(50% - 40px);
+
+								}
+
+							}
+
+							#employment .aero-instructors .aero-copy .list-columns .second-list {}
+
+							@media screen and (min-width: 768px) {
+
+								#employment .aero-instructors .aero-copy .list-columns .second-list {
+
+									float: right;
+									width: 47%;
+									width: calc(50% - 40px);
+
+								}
+
+							}
+
+								#employment .aero-instructors .aero-copy ul {
+
+									padding-left: 20px;
+
+								}
+
+									#employment .aero-instructors .aero-copy li {}
+
+						#employment .aero-instructors .aero-copy .list-columns.second-set {}
+
+							#employment .aero-instructors .aero-copy .list-columns.second-set .for-image {}
+
+							@media screen and (min-width: 992px) {
+
+								#employment .aero-instructors .aero-copy .list-columns.second-set .for-image {
+
+									position: relative;
+
+								}
+
+							}
+
+							#employment .aero-instructors .aero-copy .list-columns.second-set .for-image:after {}
+
+							@media screen and (min-width: 992px) {
+
+								#employment .aero-instructors .aero-copy .list-columns.second-set .for-image:after {
+
+									content: "";
+									position: absolute;
+									left: 0;
+									top: -60px;
+									display: block;
+									width: 865px;
+									height: 906px;
+									background: url(../img/employment_plane_background.png);
+									z-index: -1;
+
+								}
+
+							}
+
+						#employment .aero-instructors .aero-copy .send-resume-button {
+
+							width: 100%;
+							max-width: 410px;
+							margin: 30px 0 0 0;
+							font-size: 21px;
+							text-transform: uppercase;
+							text-align: center;
+							font-weight: 600;
+
+						}
+
+							#employment .aero-instructors .aero-copy .send-resume-button a {
+
+								display: block;
+								padding: 15px;
+								color: #ffffff;
+								background: rgb(255, 153, 0);
+								text-decoration: none
+
+							}
+
+							#employment .aero-instructors .aero-copy .send-resume-button a:hover {}
+
+		#employment .aero-other-opportunities {}
+
+			#employment .aero-other-opportunities .aero-copy-container {}
+
+				#employment .aero-other-opportunities .aero-copy {}
+
+					#employment .aero-other-opportunities .aero-copy div {}
+
+						#employment .aero-other-opportunities .aero-copy h2 {}
+
+						#employment .aero-other-opportunities .aero-copy h3 {}
+
+						#employment .aero-other-opportunities .aero-copy .employment-other-opportunities {
+
+							margin: 36px 0 0 0;
+
+						}
+
+							#employment .aero-other-opportunities .aero-copy .employment-opportunity {
+
+								padding: 24px 36px 36px 36px;
+								background: rgb(242, 242, 242);
+
+							}
+
+							#employment .aero-other-opportunities .aero-copy .employment-opportunity:nth-child(even) {
+
+								background: none;
+
+							}
+
+								#employment .aero-other-opportunities .aero-copy .employment-opportunity-title {
+
+									font-size: 26px;
+									font-weight: 600;
+									text-transform: uppercase;
+									text-align: center;
+
+								}
+
+								@media screen and (min-width: 992px) {
+
+									#employment .aero-other-opportunities .aero-copy .employment-opportunity-title {
+
+										text-align: left;
+
+									}
+
+								}
+
+								#employment .aero-other-opportunities .aero-copy .employment-opportunity-details {}
+
+									#employment .aero-other-opportunities .aero-copy .employment-opportunity-details p {
+
+										margin-top: 14px;
+										margin-bottom: 0;
+										font-weight: 400;
+
+									}
+
+								#employment .aero-other-opportunities .aero-copy .employment-opportunity-full-description {
+
+									margin-bottom: 0;
+									font-weight: 600;
+
+								}
+
+									#employment .aero-other-opportunities .aero-copy .employment-opportunity-full-description a {}
+
+									#employment .aero-other-opportunities .aero-copy .employment-opportunity-full-description a:hover {}
+
+								#employment .aero-other-opportunities .aero-copy .send-resume-button {
+
+									width: 100%;
+									max-width: 410px;
+									margin: 17px auto 0 auto;
+									font-size: 21px;
+									text-transform: uppercase;
+									text-align: center;
+									font-weight: 600;
+
+								}
+
+								@media screen and (min-width: 992px) {
+
+									#employment .aero-other-opportunities .aero-copy .send-resume-button {
+
+										margin: 17px 0 0 0;
+
+									}
+
+								}
+
+									#employment .aero-other-opportunities .aero-copy .send-resume-button a {
+
+										display: block;
+										padding: 15px;
+										color: #ffffff;
+										background: rgb(255, 153, 0);
+										text-decoration: none
+
+									}
+
+									#employment .aero-other-opportunities .aero-copy .send-resume-button a:hover {}
+
+						#employment .aero-other-opportunities .aero-copy .employment-note {
+
+							padding: 0 36px;
+							text-align: center;
+
+						}
+
+							#employment .aero-other-opportunities .aero-copy .employment-note b {}
+
+						#employment .aero-other-opportunities .aero-copy .employment-questions {
+
+							margin-top: 100px;
+							font-size: 26px;
+							font-weight: 600;
+							text-align: center;
+
+						}
+
+							#employment .aero-other-opportunities .aero-copy .employment-questions a {}
+
+							#employment .aero-other-opportunities .aero-copy .employment-questions a:hover {}
+
+/* Helicopter
+--------------------------------------*/
+
+#helicopter {}
+
+	#helicopter .top-copy {}
+
+		#helicopter .top-copy .aero-copy-container {}
+
+			#helicopter .top-copy .aero-copy {}
+
+				#helicopter .top-copy .aero-copy div {}
+
+					#helicopter .top-copy .aero-copy p {}
+
+						#helicopter .top-copy .aero-copy .orange {
+
+							color: rgb(255, 153, 0);
+
+						}
+
+						#helicopter .top-copy .aero-copy .tel {
+
+							white-space: nowrap;
+
+						}
+
+						#helicopter .top-copy .aero-copy .blue {
+
+							color: rgb(50, 153, 186);
+
+						}
+
+	.aero-helicopter-program-structure {
+
+		padding-top: 0;
+
+	}
+
+		.aero-helicopter-program-structure .aero-copy-container {}
+
+			.aero-helicopter-program-structure .aero-copy {}
+
+				.aero-helicopter-program-structure .aero-copy div {}
+
+					.aero-helicopter-program-structure .aero-copy h2 {}
+
+					.aero-helicopter-program-structure .aero-copy h3 {}
+
+					.aero-helicopter-program-structure-wrap {
+
+						display: flex;
+						flex-direction: row;
+						flex-wrap: nowrap;
+						justify-content: flex-start;
+						align-items: stretch;
+						align-content: flex-start;
+
+					}
+
+						.aero-helicopter-program-structure-content {}
+
+						@media screen and (min-width: 992px) {
+
+							.aero-helicopter-program-structure-content {
+
+								width: 55%;
+
+							}
+
+						}
+
+							.aero-helicopter-program-structure .aero-copy ol {
+
+								padding-left: 24px;
+								font-size: 22px;
+								font-weight: 600;
+
+							}
+
+							@media screen and (min-width: 768px) {
+
+								.aero-helicopter-program-structure .aero-copy ol {
+
+									font-size: 16px;
+
+								}
+
+							}
+
+							.aero-helicopter-program-structure .aero-copy ul {
+
+								padding-left: 19px;
+								list-style-type: disc;
+
+							}
+
+								.aero-helicopter-program-structure .aero-copy li {}
+
+						.aero-helicopter-program-structure-image {}
+
+						@media screen and (min-width: 992px) {
+
+							.aero-helicopter-program-structure-image {
+
+								position: relative;
+								width: 45%;
+
+							}
+
+						}
+
+							.aero-helicopter-program-structure-image img {
+
+								display: none;
+
+							}
+
+							@media screen and (min-width: 992px) {
+
+								.aero-helicopter-program-structure-image img {
+
+									position: absolute;
+									left: 0;
+									top: 5px;
+									display: block;
+									width: auto;
+									height: 110%;
+									z-index: 1;
+
+								}
+
+							}
+
+	.aero-helicopter-duration-and-schedule {
+
+		padding-top: 0;
+
+	}
+
+		.aero-helicopter-duration-and-schedule .aero-copy-container {}
+
+			.aero-helicopter-duration-and-schedule .aero-copy {
+
+				padding-top: 0;
+
+			}
+
+				.aero-helicopter-duration-and-schedule .aero-copy div {}
+
+					.aero-helicopter-duration-and-schedule .aero-copy h2 {}
+
+					.aero-helicopter-duration-and-schedule .aero-copy h3 {}
+
+					.aero-helicopter-duration-and-schedule .aero-copy ol {
+
+						padding-left: 24px;
+						font-size: 16px;
+
+					}
+
+						.aero-helicopter-duration-and-schedule .aero-copy li {}
+
+	.aero-helicopter-program-financing {
+
+		padding-top: 0;
+
+	}
+
+		.aero-helicopter-program-financing .aero-copy-container {}
+
+			.aero-helicopter-program-financing .aero-copy {
+
+				padding-top: 0;
+
+			}
+
+				.aero-helicopter-program-financing .aero-copy div {}
+
+					.aero-helicopter-program-financing .aero-copy h2 {}
+
+					.aero-helicopter-program-financing .aero-copy h3 {}
+
+					.aero-helicopter-program-financing .aero-copy ol {
+
+						padding-left: 24px;
+						font-size: 16px;
+
+					}
+
+						.aero-helicopter-program-financing .aero-copy li {}
+
+	#helicopter-take-the-first-step-outer-wrap {
+
+		margin-top: 40px;
+		overflow: hidden;
+
+	}
+
+		#helicopter-take-the-first-step {
+
+			width: 100%;
+			max-width: 1330px;
+			margin: 0 auto;
+			padding: 0;
+			/*overflow: hidden;*/
+
+		}
+
+			.helicopter-take-the-first-step-wrap {}
+
+			@media screen and (min-width: 992px) {
+
+				.helicopter-take-the-first-step-wrap {
+
+					display: flex;
+					flex-direction: row;
+					flex-wrap: nowrap;
+					justify-content: flex-start;
+					align-items: stretch;
+					align-content: flex-start;
+
+				}
+
+			}
+
+				.helicopter-take-the-first-step-image {
+
+					display: none;
+
+				}
+
+				@media screen and (min-width: 992px) {
+
+					.helicopter-take-the-first-step-image {
+
+						display: block;
+						width: 50%;
+						padding: 0 30px 0 0;
+						align-self: flex-end;
+
+					}
+
+				}
+
+					.helicopter-take-the-first-step-image img {
+
+						position: relative;
+						right: -140px;
+						float: right;
+						z-index: -1;
+
+					}
+
+					@media screen and (min-width: 1200px) {
+
+						.helicopter-take-the-first-step-image img {
+
+							right: -100px;
+
+						}
+
+					}
+
+					@media screen and (min-width: 1400px) {
+
+						.helicopter-take-the-first-step-image img {
+
+							position: static;
+							right: auto;
+							z-index: 1;
+
+						}
+
+					}
+
+				.helicopter-take-the-first-step-form {
+
+					padding: 0 0 65px 0;
+
+				}
+
+				@media screen and (min-width: 992px) {
+
+					.helicopter-take-the-first-step-form {
+
+						width: 50%;
+						padding: 65px 0;
+
+					}
+
+				}
+
+					.helicopter-take-the-first-step-form-inner-wrap {
+
+						padding: 0 20px;
+
+					}
+
+					@media screen and (min-width: 992px) {
+
+						.helicopter-take-the-first-step-form-inner-wrap {
+
+							padding: 0 18% 0 0;
+
+						}
+
+					}
+
+						.helicopter-take-the-first-step-form h2 {
+
+							margin: 0 0 16px 0;
+							font-size: 37px;
+							line-height: 1;
+							font-family: Georgia, Times, "Times New Roman", serif;
+							font-style: italic;
+							text-align: center;
+
+						}
+
+						@media screen and (min-width: 992px) {
+
+							.helicopter-take-the-first-step-form h2 {
+
+								font-size: 60px;
+								text-align: left;
+
+							}
+
+						}
+
+						.helicopter-take-the-first-step-form p {
+
+							font-size: 16px;
+							line-height: 1.3125;
+							text-align: center;
+
+						}
+
+						@media screen and (min-width: 992px) {
+
+							.helicopter-take-the-first-step-form p {
+
+								text-align: left;
+
+							}
+
+						}
+
+						.helicopter-take-the-first-step-form ul {
+
+							display: flex;
+							flex-direction: row;
+							flex-wrap: wrap;
+							justify-content: space-between;
+							align-items: flex-start;
+							align-content: flex-start;
+							margin: 20px 0 10px 0;
+							padding: 0;
+							list-style: none;
+
+						}
+
+							.helicopter-take-the-first-step-form li {
+
+								width: 100%;
+								margin: 0 0 8px 0;
+
+							}
+
+							@media screen and (min-width: 480px) {
+
+								.helicopter-take-the-first-step-form li {
+
+									width: 49%;
+									width: calc(50% - 6px);
+
+								}
+
+							}
+
+								.helicopter-take-the-first-step-form label {
+
+									font-size: 12px;
+									text-transform: uppercase;
+									color: #3299ba;
+
+								}
+
+								.helicopter-take-the-first-step-form input {
+
+									border: 1px solid #888888;
+									border-radius: 4px;
+
+								}
+
+						.helicopter-take-the-first-step-form div.submit {
+
+							max-width: none;
+
+						}
+
+							.helicopter-take-the-first-step-form button {
+
+								max-width: none;
+
+							}
